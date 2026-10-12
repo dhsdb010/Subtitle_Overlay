@@ -4,8 +4,6 @@ Load a `.ass`, `.ssa`, `.srt` or `.smi` subtitle file and show it over any HTML5
 
 ![Subtitle Overlay showing a subtitle on a video with the settings menu open](store/out/screenshot-1-hero.png)
 
-**Feature slides:** [Subtitle Overlay — Features](https://claude.ai/artifact/6VwjoguweuqhGwaaJnFeb8)
-
 ## Install
 1. Open `chrome://extensions` and turn on **Developer mode** (top right).
 2. Click **Load unpacked** and pick this folder.
