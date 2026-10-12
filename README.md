@@ -1,4 +1,4 @@
-# Subtitle Overlay (Chrome extension)
+# <img src="icons/icon128.png" width="40" alt=""> Subtitle Overlay (Chrome extension)
 
 Load a `.ass`, `.ssa`, `.srt` or `.smi` subtitle file and show it over any HTML5 video, bottom-center, synced to playback.
 
