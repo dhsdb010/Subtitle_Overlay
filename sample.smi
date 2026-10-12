@@ -1,0 +1,20 @@
+<SAMI>
+<HEAD>
+<TITLE>Sample</TITLE>
+<STYLE TYPE="text/css">
+<!--
+P { margin-left:8pt; margin-right:8pt; }
+.KRCC { Name:Korean; lang:ko-KR; SAMIType:CC; }
+.ENCC { Name:English; lang:en-US; SAMIType:CC; }
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<SYNC Start=1000><P Class=KRCC>안녕하세요! SMI 자막입니다.
+<SYNC Start=1000><P Class=ENCC>Hello! This is an SMI subtitle.
+<SYNC Start=4000><P Class=KRCC>&nbsp;
+<SYNC Start=4500><P Class=KRCC><font color="FFFF00">노란색</font> 글자와<br>두 번째 줄
+<SYNC Start=8000><P Class=KRCC>&nbsp;
+<SYNC Start=8500><P Class=KRCC>마지막 줄입니다
+</BODY>
+</SAMI>

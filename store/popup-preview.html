@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Renders the real popup with sample settings, for store screenshots. Query: ?view=…&s=<settings JSON>&picker=1 -->
+  <script>
+    const q = new URLSearchParams(location.search);
+    const store = {
+      settings: Object.assign({}, JSON.parse(q.get('s') || '{}')),
+      subtitle: { name: q.get('file') || 'episode01.kor.ass', cues: new Array(Number(q.get('lines') || 312)) }
+    };
+    const listeners = [];
+    window.chrome = { storage: { local: {
+      get(keys, cb) { const o = {}; keys.forEach((k) => { if (k in store) o[k] = store[k]; }); setTimeout(() => cb && cb(o)); return Promise.resolve(o); },
+      set(o) { Object.assign(store, o); return Promise.resolve(); },
+      remove() { return Promise.resolve(); }
+    }, onChanged: { addListener(f) { listeners.push(f); } } } };
+    const realFetch = window.fetch;
+    window.fetch = (url, opts) => realFetch(url === 'about.json' ? '../about.json' : url, opts);
+  </script>
+  <link rel="stylesheet" href="../popup.css">
+  <style>body { width: 290px; } </style>
+</head>
+<body>
+  <div id="app"></div>
+  <input type="file" id="file" hidden>
+  <script src="../settings.js"></script>
+  <script src="../subtitle-parser.js"></script>
+  <script src="../popup.js"></script>
+  <script>
+    // Open the requested sub-page once the popup has rendered.
+    setTimeout(() => {
+      if (q.get('picker')) pickerOpen = true;
+      const view = q.get('view');
+      if (view) go(view);
+      if (q.get('msg')) { message = { text: q.get('msg') }; render(); }
+      if (q.get('hover')) {
+        const row = [...document.querySelectorAll('.row')].find((r) => r.textContent.startsWith(q.get('hover')));
+        if (row) row.style.background = 'var(--hover)';
+      }
+    }, 50);
+  </script>
+</body>
+</html>

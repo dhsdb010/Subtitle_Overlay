@@ -1,0 +1,9 @@
+# Build output (rebuild the store ZIP from the source files)
+dist/
+
+# Local tooling
+.mcp.json
+.claude/
+
+# macOS
+.DS_Store

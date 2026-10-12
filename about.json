@@ -1,0 +1,39 @@
+{
+  "name": "Subtitle Overlay",
+  "version": "1.2.1",
+  "author": "dhsdb010",
+  "description": "Show .ass, .srt and .smi subtitles over any web video.",
+  "changelog": [
+    {
+      "version": "1.2.1",
+      "changes": [
+        "Subtitles can be dragged in fullscreen",
+        "White on/off switch",
+        "Keyboard shortcuts no longer fire while typing in text boxes",
+        "No more errors in open tabs after the extension updates",
+        "Uses no CPU on pages without a video"
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "changes": [
+        "Built-in color picker for custom text color",
+        "Drag subtitles on the video to move them",
+        "Version and maker info"
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "changes": [
+        "Added .srt and .smi support",
+        "New compact player-style menu"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "changes": [
+        "First release: .ass subtitles over any HTML5 video"
+      ]
+    }
+  ]
+}
