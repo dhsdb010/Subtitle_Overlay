@@ -7,3 +7,13 @@ dist/
 
 # macOS
 .DS_Store
+
+# Promo video renders and editable projects (large, rebuilt by promo/.tesseract-work/build*.sh)
+promo/out/
+promo/*.tsrct
+promo/assets-src/*-raw.png
+promo/.tesseract-work/checks/
+promo/.tesseract-work/*.schema.json
+promo/.tesseract-work/*-create.json
+promo/.tesseract-work/*-keys.json
+promo/.tesseract-work/__pycache__/

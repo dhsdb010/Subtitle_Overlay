@@ -9,6 +9,7 @@
       settings: Object.assign({}, JSON.parse(q.get('s') || '{}')),
       subtitle: { name: q.get('file') || 'episode01.kor.ass', cues: new Array(Number(q.get('lines') || 312)) }
     };
+    if (q.get('nofile')) delete store.subtitle;
     const listeners = [];
     window.chrome = { storage: { local: {
       get(keys, cb) { const o = {}; keys.forEach((k) => { if (k in store) o[k] = store[k]; }); setTimeout(() => cb && cb(o)); return Promise.resolve(o); },

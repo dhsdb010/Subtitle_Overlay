@@ -51,7 +51,7 @@ browser's local extension storage. See [PRIVACY.md](PRIVACY.md).
 The store ZIP holds only the extension's own files. From this folder:
 
 ```bash
-zip -r -X dist/subtitle-overlay-$(python3 -c "import json;print(json.load(open('manifest.json'))['version'])").zip manifest.json about.json content.js fullscreen-main.js settings.js subtitle-parser.js popup.html popup.css popup.js icons
+zip -r -X dist/subtitle-overlay-$(python3 -c "import json;print(json.load(open('manifest.json'))['version'])").zip manifest.json about.json background.js content.js fullscreen-main.js settings.js subtitle-parser.js popup.html popup.css popup.js icons
 ```
 
 Store images and listing text are in `store/` (`store/LISTING.md`, images in `store/out/`).
