@@ -124,8 +124,8 @@ def build_create():
     text(211, "End title", 0, 3000, 960, 600, "Subtitle Overlay", size=112, color=PURE_WHITE, just="center", parent=200)
     text(221, "End tagline", 0, 3000, 960, 690, "Your subtitles on any web video", font=REG, size=46,
          color=[0.86, 0.90, 1, 1], just="center", parent=200)
-    rect(231, "Links pill", 0, 3000, 400, 748, 1120, 84, [1, 1, 1, 0.14], radius=18, parent=200)
-    text(232, "Links", 0, 3000, 960, 802, "Chrome Web Store  ·  github.com/dhsdb010/Subtitle_Overlay", font=REG, size=32,
+    rect(231, "Links pill", 0, 3000, 330, 748, 1260, 84, [1, 1, 1, 0.14], radius=18, parent=200)
+    text(232, "Links", 0, 3000, 960, 802, "Now on the Chrome Web Store  ·  github.com/dhsdb010/Subtitle_Overlay", font=REG, size=32,
          color=PURE_WHITE, just="center", parent=200)
 
 
