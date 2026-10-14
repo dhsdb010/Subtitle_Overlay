@@ -2,9 +2,13 @@
 
 Load a `.ass`, `.ssa`, `.srt` or `.smi` subtitle file and show it over any HTML5 video, bottom-center, synced to playback.
 
+**[Get it on the Chrome Web Store](https://chromewebstore.google.com/detail/subtitle-overlay/biplgddfcaelhehiaieneonhefpgfojm)**
+
 ![Subtitle Overlay showing a subtitle on a video with the settings menu open](store/out/screenshot-1-hero.png)
 
 ## Install
+Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/subtitle-overlay/biplgddfcaelhehiaieneonhefpgfojm), or load it from source:
+
 1. Open `chrome://extensions` and turn on **Developer mode** (top right).
 2. Click **Load unpacked** and pick this folder.
 3. Pin the extension (puzzle icon → pin) and **refresh** the tab with your video.
